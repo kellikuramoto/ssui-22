@@ -1,8 +1,31 @@
-/*
-* all the code for homework 2 goes into this file.
-You will attach event handlers to the document, workspace, and targets defined in the html file
-to handle mouse, touch and possible other events.
+let CLICKED_STATE = false;
 
-You will certainly need a large number of global variables to keep track of the current modes and states
-of the interaction.
-*/
+
+/* mouse-click on a div  */
+document.querySelectorAll('.target').forEach(item => {
+    if ( item.style.backgroundColor == 'blue') {
+        CLICKED_STATE = true;
+        item.style.backgroundColor = 'red';
+    }
+    item.addEventListener('click', () => {
+        console.log("Clicked on div");
+
+        // var itemStyle = item.style;
+        // var computedStyle = window.getComputedStyle(item, null);
+
+        // for (prop in itemStyle) {
+        //     if (itemStyle.hasOwnProperty(prop)) {
+        //         console.log(itemStyle[prop] + "' > '" + computedStyle[prop] + "'\n");
+        //     }
+        // }
+        // console.log(out)
+        if (CLICKED_STATE == false) {
+            item.style.backgroundColor = 'blue';
+            CLICKED_STATE = true;
+        }
+        else {
+            item.style.backgroundColor = 'red';
+        }
+        console.log(item.style.backgroundColor);
+    })
+})
