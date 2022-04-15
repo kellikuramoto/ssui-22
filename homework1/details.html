@@ -18,7 +18,57 @@
   <!-- Your JS Code -->
   <script src="main.js"></script>
 </head>
-<body onload="initDetails()">
-  <!-- Your Code Here -->
+<body onload="initDetails()"">
+  <div id="header">
+    <img alt="SSUI logo" id="logo" src="site_images/logo.png" onclick="home()">
+    <h1>Scotty Shirts U Illustrate</h1>
+  </div>
+    
+  <nav id="navigation">
+    <a href="products.html">T Shirts</a>
+    <a href="not_implemented.html">Hoodies</a>
+    <a href="not_implemented.html">Create Your Own</a>
+    <a href="not_implemented.html">About Us</a>
+    <a href="not_implemented.html">Your Account</a>
+  </nav>
+
+  <div id="individual-product">
+  <h4 id="product_name"></h4>
+
+  <div id="product_content">
+    <div id="container-image">
+      <img id="product_image" alt="Image of shirt">
+    </div>
+    <div id="container-info">
+      <h4 id="product_name"></h4>
+      <p id="product_price"></p>
+      <p id="product_description"></p>
+      <p id="product_side"> Side:
+        <button onclick="updateImageSide('front')">
+          Front
+        </button>
+        <button onclick="updateImageSide('back')">
+          Back
+        </button>
+      </p>
+      <p id="product_color">Color: 
+
+      </p>
+
+    </div>
+    </div>
+  </div>
+
+  <div id="footer">
+    <nav>
+      <a href="products.html">Contact Us</a>
+      <a href="not_implemented.html">Site Map</a>
+      <a href="not_implemented.html">Privacy Policy</a>
+      <a href="not_implemented.html">Careers</a>
+      <a href="not_implemented.html">Reviews</a>
+      <p>Designed by Kelli Kuramoto</p>
+    </nav>
+  </div>
 </body>
+
 </html>
