@@ -140,3 +140,21 @@ nav a {
 #product_side, #product_color {
     font-size: 22px;
 }
+
+#scotty {
+    opacity: 0.2;
+    width: 500px;
+    height: auto;
+    margin: auto;
+    display: block;
+}
+
+#not_implemented {
+    width: 80%;
+    margin: auto;
+}
+
+#not_implemented p {
+    text-align: center;
+    /* margin-right: auto; */
+}
